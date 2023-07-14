@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet Generatort</title>
+</head>
+<link rel="stylesheet" href="mark.css">
+<body background="grey">
+
+    <center>
+        <div class="color">
+            <h1 align="center" style="font-family: cambria; font-size: 40;">Student Marksheet</h1>
+            <fieldset>
+                <h3>Student Information</h3>
+                <tr>
+                <table align="center" id="tb1">
+                    <form name="form1">
+                    </tr>
+                    <tr>
+                        <td width="140">s Name: </td>
+                        <td> <input type="text" name="txtname"/></td>
+                        <td> &nbsp; &nbsp; Father's Name:</td><td><input type="text" name="txtfname"/></td>
+                        
+                        </tr>
+
+                    <tr>
+                        <td width="140">Institute Name:</td>
+                        <td><input type="text"name="txtins"></td>
+                        <td> &nbsp; &nbsp; Batch: </td><td><input type="text"name="txtbatch"></td>
+                    </tr>
+                    </form>
+                </table>
+            </fieldset>
+            <br>
+
+            <h3>Subject Marks</h3>
+            <table id="tb12">
+                <tr>
+                    <td> IT:</td>
+                    <td> <INPUT type="text" name="txtoffice" maxlength="10" size="10"/>Out of 100</INPUT></td>
+                </tr>
+
+                <tr>
+                    <td>Office Automation:</td>
+                    <td> <INPUT type="text" name="txtweb" maxlength="2" size="10"/>Out of 100</INPUT></td>
+                </tr>
+
+                <tr>
+                    <td> C# programming:</td>
+                    <td> <INPUT type="text" name="txtit" maxlength="2" size="10"/>Out of 100</INPUT></td>
+                </tr>
+
+                <tr>
+                    <td> Web Designing:</td>
+                    <td> <INPUT type="text" name="txtc" maxlength="2" size="10"/>Out of 100</INPUT></td>
+                </tr>
+
+                <tr>
+                    <td> &nbsp; &nbsp; </td>
+                </tr>             
+            </table>
+
+         <fieldset>
+            <div class="btn">
+                <button style="width:80px;height:35px;" type="button" onclick='calculate()'>SUBMIT </button> &nbsp;
+
+                <button style="width:80px;height:35px;" type="Reset">Reset</button>
+            </div>
+         </fieldset>
+<br>
+
+<div class="demo">
+    <table border="1">
+        <tr>
+            <th colspan="9" width="460">STUDENT INFORMATION</th>
+        </tr>
+        <TR>
+            <TD Width="150">Name:</TD>
+            <td> <font face="arial" id="demoname"></font></td>
+        </TR>
+        <TR>
+            <TD Width="150"> Father's Name:</TD>
+            <td> <font face="arial" id="demofname"></font></td>
+        </TR>
+        <TR>
+            <TD Width="150"> Institute Name:</TD>
+            <td> <font face="arial" id="demoins"></font></td>
+        </TR>
+        <TR>
+            <TD Width="150">Batch:</TD>
+            <td> <font face="arial" id="demobatch"></font></td>
+        </TR>
+        <tr>
+        <th colspan="9" width="240"> SUBJECT MARKS</th>
+        </TR>
+        <TR>
+            <TD Width="150">IT:</TD>
+            <td> <font face="arial" id="demooffice"></font></td>
+        </TR>
+        <TR>
+            <TD Width="150">C# PROGRAMMING:</TD>
+            <td> <font face="arial" id="demoweb"></font></td>
+        </TR>
+         
+        <TR>
+            <TD Width="150">Office Automation :</TD>
+            <td> <font face="arial" id="demoit"></font></td>
+        </TR>
+
+        <TR>
+            <TD Width="150">Web Designing:</TD>
+            <td> <font face="arial" id="democ"></font></td>
+        </TR>
+        <tr>
+            <th colspan="9" width="240">  MARKS RESULTS</th>
+            </TR>
+            <TR>
+                <TD Width="150">Total:</TD>
+                <td> <font face="arial" id="demototal"></font></td>
+            </TR>
+
+            <TR>
+                <TD Width="150">Web Designing:</TD>
+                <td> <font face="arial" id="demoper"></font></td>
+            </TR>
+            <TR>
+                <TD Width="150">Web Designing:</TD>
+                <td> <font face="arial" id="demograde"></font></td>
+            </TR>
+        <tr>
+        </tr>
+    </table>
+</div>
+        </div>
+    </center>
+    <script src="marks.js"></script>
+    <style>
+        .color{
+            letter-spacing: 80%;
+            background-color: rgb(221, 228, 234);
+        }
+    </style>
+</body>
+</html>
